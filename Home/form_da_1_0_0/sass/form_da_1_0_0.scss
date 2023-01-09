@@ -1,0 +1,290 @@
+.form_da_1_0_0 {
+    padding: 30px 0;
+
+    &__box {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    &__form {
+        width: 33%;
+        background-color: #007471;
+        text-align: center;
+        border-radius: 10px;
+        padding-top: 20px;
+
+        article {
+            padding: 10px 20px;
+        }
+
+        span {
+            font-weight: 600;
+            font-size: 22px;
+            color: #fff;
+            padding-bottom: 20px;
+        }
+
+        button {
+            border: none;
+            background: none;
+
+            img {
+                width: 55%;
+                height: auto;
+            }
+        }
+    }
+
+    &__formRegist {
+        input {
+            width: 100%;
+            border-radius: 5px;
+            padding: 10px 12px;
+            margin: 0 0 10px;
+            border: none;
+        }
+    }
+
+    &__title {
+        background-color: #007471;
+        color: #fff;
+        text-align: center;
+        padding: 15px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    &__address {
+        width: 65%;
+    }
+
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    &__item {
+        width: 50%;
+        border: 1px solid #eee;
+        padding: 10px 0px 10px 15px;
+        line-height: 30px;
+
+        p {
+            color: #007471;
+            font-weight: 600;
+            font-size: 20px;
+            margin: 0;
+        }
+
+        span {
+            color: #000;
+        }
+    }
+
+    &__des {
+        display: flex;
+        align-items: center;
+        font-weight: 600;
+    }
+
+    &__map {
+        display: flex;
+        align-items: center;
+        padding: 5px 10px;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+
+        img {
+            width: 17px;
+            height: auto;
+            margin-right: 5px;
+        }
+    }
+
+    &__call {
+        display: flex;
+        align-items: center;
+
+        img {
+            width: 27px;
+            height: auto;
+            margin-right: 5px;
+        }
+    }
+
+    &__regist {
+        background: #D8A956;
+        position: relative;
+        width: 50%;
+        margin: 10px auto;
+        border-radius: 5px;
+        font-weight: 600;
+        font-size: 18px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        transition: all 0.2s linear;
+
+        p {
+            color: #007471;
+            margin: 0;
+        }
+    }
+
+    &__coating {
+        background: #fff;
+        border-radius: 5px 87px 0px 5px;
+        padding: 10px 0;
+        text-align: center;
+        width: 95%;
+        transition: all 0.2s linear;
+
+    }
+
+    &__iconReg {
+        position: absolute;
+        top: -3px;
+        right: 3px;
+        width: 15px;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    @media (max-width: 1180px) {
+        &__box {
+            gap: 20px;
+        }
+
+        &__form {
+            span {
+                font-size: 18px;
+            }
+        }
+
+        &__title {
+            padding: 10px;
+        }
+
+        &__item {
+            p {
+                font-size: 17px;
+            }
+        }
+    }
+
+    @media (max-width: 912px) {
+        &__box {
+            gap: 10px;
+        }
+
+        &__form {
+            span {
+                font-size: 15px;
+            }
+
+            article {
+                padding: 10px 12px;
+            }
+
+            button img {
+                width: 60%;
+            }
+        }
+
+        &__item {
+            line-height: 27px;
+            padding: 5px 0px 5px 7px;
+
+            p {
+                font-size: 15px;
+            }
+
+            span {
+                font-size: 13px;
+            }
+        }
+
+        &__regist {
+            width: 60%;
+        }
+    }
+
+    @media (max-width: 767px) {
+        &__box {
+            gap: 15px;
+            flex-direction: column;
+        }
+
+        &__iconReg {
+            position: absolute;
+            top: -3px;
+            right: 4px;
+            width: 15px;
+        }
+
+        &__form {
+            width: 100%;
+
+            span {
+                font-size: 17px;
+            }
+
+            article {
+                padding: 10px 15px;
+            }
+
+            button img {
+                width: 50%;
+            }
+        }
+
+        &__address {
+            width: 100%;
+        }
+
+        &__title {
+            padding: 15px;
+        }
+
+        &__item {
+            width: 100%;
+            line-height: 30px;
+            padding: 10px;
+
+            p {
+                font-size: 16px;
+            }
+
+            span {
+                font-size: 15px;
+            }
+        }
+    }
+
+    @media (max-width: 320px) {
+        &__form {
+            span {
+                font-size: 16px;
+            }
+
+            button img {
+                width: 60%;
+            }
+        }
+
+        &__item {
+            line-height: 28px;
+
+            p {
+                font-size: 15px;
+            }
+
+            span {
+                font-size: 14px;
+            }
+        }
+    }
+}
