@@ -12,15 +12,13 @@
     &__box {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
-        gap: 60px;
-        margin-top: 70px;
+        justify-content: space-around;
     }
 
     &__item {
         background: #007471;
         position: relative;
-        width: 40%;
+        width: 45%;
         border-radius: 5px;
         margin: 15px 0;
     }
@@ -54,7 +52,7 @@
     &__img {
         position: absolute;
         bottom: 0;
-        width: 150px;
+        width: 110px;
         left: -50px;
 
         img {
