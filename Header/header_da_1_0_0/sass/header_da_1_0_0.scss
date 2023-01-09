@@ -7,7 +7,7 @@ button {
 }
 
 .header_da_1_0_0 {
-    position: sticky;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -28,7 +28,7 @@ button {
         box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.15);
     }
 
-    &__searchMb{
+    &__searchMb {
         display: none;
     }
 
@@ -315,6 +315,7 @@ button {
             padding: 8px 0;
             border-bottom: 1px solid #F5F5F5;
             margin: 0 15px;
+
             &.open {
                 .header_da_1_0_0__link::after {
                     background: url('../images/icon-up.svg') no-repeat center;
@@ -405,22 +406,23 @@ button {
             }
         }
 
-        &__nav{
-            img{
+        &__nav {
+            img {
                 width: 20px;
                 height: auto;
             }
         }
 
-        &__searchMb{
+        &__searchMb {
             right: 35px;
-            img{
+
+            img {
                 width: 30px;
                 height: auto;
             }
         }
 
-        &__list{
+        &__list {
             top: 50.7px;
             width: 200px;
         }
