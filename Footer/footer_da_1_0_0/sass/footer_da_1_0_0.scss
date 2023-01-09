@@ -40,8 +40,8 @@
     &__social {
         display: flex;
         align-items: center;
-        justify-content: space-between;
         padding: 15px 0 25px;
+        gap: 18px;
     }
 
     &__dl {
@@ -51,7 +51,6 @@
 
         img {
             width: 155px;
-            height: auto;
         }
     }
 
@@ -130,41 +129,50 @@
             }
         }
     }
-    @media (max-width: 768px){
-        .col-md-4{
+
+    @media (max-width: 768px) {
+        .col-md-4 {
             margin-bottom: 15px;
         }
+
         &__head {
             font-size: 17px;
         }
+
         &__text {
             font-size: 15.5px;
+
             img {
                 margin-bottom: -4px;
                 width: 18px;
                 height: auto;
             }
         }
+
         &__policy {
             font-size: 15.5px;
         }
+
         &__social {
             img {
                 width: 45px;
             }
         }
+
         &__dl {
             img {
                 width: 140px;
             }
         }
+
         &__certificate {
             font-size: 15.5px;
         }
     }
-    @media (max-width: 320px){
-        &__dl{
-            img{
+
+    @media (max-width: 320px) {
+        &__dl {
+            img {
                 width: 95px;
             }
         }
