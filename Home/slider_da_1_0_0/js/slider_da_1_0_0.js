@@ -23,7 +23,7 @@ const slideNext = (data) => {
             count = 0;
         }
         
-    }, 3000);
+    }, 9000);
 }
 
 slideBuild(slider_da_1_0_0__data[0])
