@@ -64,6 +64,10 @@ button {
         border-radius: 5px;
         color: #fff;
         padding: 10px;
+        transition: all 0.5s;
+        &:hover{
+            background: rgb(3 84 63/1);
+        }
 
         img {
             width: 15px;
@@ -89,6 +93,7 @@ button {
 
 
     &__list {
+        position: relative;
         display: flex;
         list-style: none;
         margin: 0;
@@ -99,6 +104,14 @@ button {
     &__item {
         padding: 10px 5px;
         position: relative;
+        &.mega_menu{
+            position: unset;
+            .header_da_1_0_0__dropdown{
+                width: 100%;
+                right: 0;
+                transform: unset;
+            }
+        }
     }
 
     &__link {
@@ -189,6 +202,9 @@ button {
 
     &__bg {
         display: none;
+        &.active{
+            display: block;
+        }
     }
 
     @media (max-width: 1200px) {
@@ -317,7 +333,9 @@ button {
             padding: 8px 0;
             border-bottom: 1px solid #F5F5F5;
             margin: 0 15px;
-
+            &.mega_menu{
+                position: relative;
+            }
             &.open {
                 .header_da_1_0_0__link::after {
                     background: url('../images/icon-up.svg') no-repeat center;
