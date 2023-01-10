@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AAAA,AACI,aADS,CACT,GAAG,CAAA;EACC,OAAO,EAAE,KAAK;EACd,KAAK,EAAE,IAAI;EACX,MAAM,EAAC,IAAI;CACd",
+    "mappings": "AAAA,AACI,aADS,CACT,GAAG,AAAA,CACC,OAAO,CAAE,KAAK,CACd,KAAK,CAAE,IAAI,CACX,MAAM,CAAC,IAAI,CACd",
     "sources": [
         "slider_da_1_0_0.scss"
     ],
