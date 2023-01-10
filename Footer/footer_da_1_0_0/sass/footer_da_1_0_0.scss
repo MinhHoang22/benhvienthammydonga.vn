@@ -51,7 +51,6 @@
 
         img {
             width: 155px;
-            height: auto;
         }
     }
 
@@ -68,7 +67,7 @@
         }
     }
 
-    &__note{
+    &__note {
         width: 100%;
         text-align: center;
         padding: 10px 0;
@@ -76,12 +75,13 @@
         background: #005351;
     }
 
-    @media (max-width: 1200px){
-        &__social{
+    @media (max-width: 1200px) {
+        &__social {
             gap: 0;
             justify-content: space-between;
         }
-        &__dl img{
+
+        &__dl img {
             width: 140px;
         }
     }
@@ -137,6 +137,7 @@
         &__social {
             justify-content: unset;
             gap: 10px;
+
             img {
                 width: 35px;
                 height: auto;
@@ -178,6 +179,7 @@
 
         &__social {
             gap: 20px;
+
             img {
                 width: 45px;
             }
@@ -195,9 +197,10 @@
     }
 
     @media (max-width: 320px) {
-        &__social{
+        &__social {
             gap: 5px;
         }
+
         &__dl {
             img {
                 width: 110px;
