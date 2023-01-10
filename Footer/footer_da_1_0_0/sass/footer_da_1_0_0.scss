@@ -1,6 +1,6 @@
 .footer_da_1_0_0 {
     background: #007471;
-    padding: 20px 0;
+    padding: 20px 0 40px;
     color: #fff;
 
     &__logo {
@@ -152,6 +152,7 @@
     }
 
     @media (max-width: 768px) {
+        padding: 20px 0;
         .col-md-4 {
             margin-bottom: 15px;
             max-width: unset;
