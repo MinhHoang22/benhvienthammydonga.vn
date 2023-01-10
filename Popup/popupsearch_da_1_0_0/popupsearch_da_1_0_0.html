@@ -7,29 +7,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>popupcall_da_1_0_0</title>
     <link rel="stylesheet" href="https://huudinh.github.io/media/css/style-min.css">
-    <link rel="stylesheet" href="sass/popupsearch_da_1_0_0.min.css">
+    <link rel="stylesheet" href="sass/popupsearch_da_1_0_0.css">
 </head>
 
 <body>
-    <div class="modal popupSearch_1_0_0" id="search">
+    <div class="modal popupsearch_da_1_0_0" id="modal-search">
         <div class="modal-bg"></div>
-        <div class="modal-box animate-zoom">
-            <div class="modal-header">
-                <div class="modal-close">×</div>
-                <div class="popupSearch_1_0_0__title">Tìm Kiếm Nhanh</div>
+        <div class="modal-box animate-pop popupsearch_da_1_0_0__box">
+            <div class="popupsearch_da_1_0_0__header">
+                <div class="modal-close popupsearch_da_1_0_0__close">&times;</div>
+                <div class="popupsearch_da_1_0_0__title">
+                    Tìm kiếm nhanh
+                </div>
             </div>
-            <div class="modal-body">
-                <form action="/" id="searchform" name="searchform" method="get" onsubmit="return checkSearch()">
-                    <div class="popupSearch_1_0_0__search">
+            <div class="popupsearch_da_1_0_0__body">
+                <form action="/" id="searchform" name="searchform" method="get">
+                    <div class="popupsearch_da_1_0_0__search">
                         <input id="s" name="s" type="text" placeholder="Nhập từ khóa tìm kiếm">
-                        <button type="submit"><img width="16" height="16"
-                                src="https://benhvienthammydonga.vn/wp-content/themes/donga/Module_v2/Popup/popup_search_1_0_0/images/search.svg"
-                                alt="pop-search"></button>
+                        <button type="submit"><img width="37" height="37" src="images/icon-search.svg" alt="pop-search"></button>
                     </div>
                 </form>
             </div>
         </div>
     </div>
+
+    <script src="https://huudinh.github.io/assets/js/lib.min.js"></script>
 </body>
 
 </html>
