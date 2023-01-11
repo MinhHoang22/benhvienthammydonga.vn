@@ -9,6 +9,7 @@
 
 .photo_1_1_0 {
     margin-top: 120px;
+    margin-bottom: 30px;
     display: flex;
     gap: 20px;
     justify-content: center;
@@ -54,6 +55,7 @@
     }
     @media (max-width:320px) {
         margin-top: 95px;
+        margin-bottom: 20px;
         &__sidebar {
             top: 50px;
         }
@@ -150,7 +152,7 @@
     }
     &__btn {
         text-align: center;
-        margin-top: 20px;
+        margin-top: 10px;
         button {
             font-size: 16px;
             color: #007471;
