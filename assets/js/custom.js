@@ -14,16 +14,19 @@ function sourceTheme(path, tag) {
         item.setAttribute('srcset', srcset);
     }
 }
+
 document.addEventListener("scroll", function () {
     myLazy('img.lazy', 'src');
     myLazy('source.lazy', 'srcset');
     myLazy('.lazy-bg', 'img-bg');
     myLazy('.load', 'loaded');
+    myLazy('.slide_run', 'slide');
+    onScroll('.header_1_1_0__list a', 'section', 'active');
 });
 LazyShowScreen('img.lazy', 'src')
-LazyShowScreen('.load', 'loaded')
 
-// Lazy load
+scrollClick('.header_1_1_0__list a, a[href="#pageReg"]');
+
 function myLazy(sec, attr) {
     const section_loads = document.querySelectorAll(sec);
     let winTop = window.innerHeight;
@@ -31,7 +34,6 @@ function myLazy(sec, attr) {
     for (let i = 0; i < section_loads.length; i++) {
         let pos_top = section_loads[i].getBoundingClientRect().top;
         let pos_bottom = section_loads[i].getBoundingClientRect().bottom;
-        let delay = section_loads[i].getAttribute('delay-time');
         if (pos_top <= winTop && pos_bottom >= 0) {
             switch (attr) {
                 case 'src':
@@ -47,10 +49,8 @@ function myLazy(sec, attr) {
                     section_loads[i].classList.add('img-bg');
                     break;
                 case 'loaded':
-                    setTimeout(() => {
-                        section_loads[i].classList.remove('load');
-                        section_loads[i].classList.add('loaded');
-                    }, delay)
+                    section_loads[i].classList.remove('load');
+                    section_loads[i].classList.add('loaded');
                     break;
                 case 'slide':
                     section_loads[i].classList.add('slide');
@@ -58,22 +58,19 @@ function myLazy(sec, attr) {
                 default:
                     console.log(`Sorry, we are out of ${attr}.`);
             }
+
         }
     }
 }
-
 function LazyShowScreen(sec, attr) {
     const section_loads = document.querySelectorAll(sec);
     let win_height = screen.height;
-    for (let i = 0; i < section_loads.length; i++) {
-        let delay = section_loads[i].getAttribute('delay-time');
 
+    for (let i = 0; i < section_loads.length; i++) {
         if (section_loads[i].getBoundingClientRect().top < win_height) {
             switch (attr) {
                 case 'loaded':
-                    setTimeout(() => {
-                        section_loads[i].classList.add('loaded');
-                    }, delay)
+                    section_loads[i].classList.add('loaded');
                     break;
                 case 'src':
                     section_loads[i].src = section_loads[i].dataset.src;
