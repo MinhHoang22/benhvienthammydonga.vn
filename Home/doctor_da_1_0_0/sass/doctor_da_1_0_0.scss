@@ -4,7 +4,7 @@
 
     &__title {
         color: #007471;
-        font-size: 32px;
+        font-size: 26px;
         font-weight: 600;
         text-align: center;
     }
@@ -30,26 +30,26 @@
         border-radius: 0 80px 0 0;
         padding: 20px 0 20px 90px;
 
-        .country {
-            position: absolute;
-            top: -15px;
-            width: 50px;
 
-            img {
-                width: 100%;
-                height: auto;
-            }
-        }
-
-        .name {
-            font-weight: bold;
-        }
-
-        p {
-            margin: 0;
-        }
 
     }
+
+    &__country {
+        position: absolute;
+        top: -15px;
+        width: 50px;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &__name {
+        font-weight: bold;
+        font-size: 16px;
+    }
+
 
     &__img {
         position: absolute;
