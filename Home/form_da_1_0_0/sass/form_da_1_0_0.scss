@@ -76,12 +76,13 @@
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
 
-        span {
+        a {
             padding: 10px 15px;
             border-radius: 5px;
             background-color: #D8A956;
             margin: 0 10px;
             font-weight: 600;
+            color: #fff;
         }
     }
 
@@ -198,7 +199,7 @@
         &__title {
             padding: 10px;
 
-            span {
+            a {
                 padding: 5px 10px;
             }
         }
@@ -304,7 +305,7 @@
             font-size: 13px;
             padding: 15px 10px;
 
-            span {
+            a {
                 padding: 7px 7px;
                 margin: 0 5px;
             }
@@ -338,7 +339,7 @@
             font-size: 12px;
             padding: 15px 5px;
 
-            span {
+            a {
                 margin: 0 2px;
             }
 
