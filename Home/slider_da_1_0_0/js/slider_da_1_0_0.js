@@ -28,3 +28,13 @@ const slideNext = (data) => {
 
 slideBuild(slider_da_1_0_0__data[0])
 slideNext(slider_da_1_0_0__data);
+
+// Fix height slider
+const scrollTo = (activeEl) => {
+    const e = document.querySelector(activeEl);
+    const height = e.offsetHeight;
+    e.style.height = `${height}px`;
+};
+setTimeout(() => {
+    scrollTo('.slider_da_1_0_0');        
+}, 1000);
