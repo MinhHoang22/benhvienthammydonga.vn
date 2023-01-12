@@ -20,7 +20,7 @@
     <header class="header_da_1_0_0">
         <div class="container">
             <div class="header_da_1_0_0__box">
-                <button class="header_da_1_0_0__searchMb modal-btn" data-modal="search">
+                <button class="header_da_1_0_0__searchMb modal-btn" data-modal="modal-search">
                     <img width="37" height="37" src="images/icon-search-light.svg" alt="">
                 </button>
                 <div class="header_da_1_0_0__nav" id="headerMenuBtn">
@@ -34,7 +34,7 @@
                 <div class="header_da_1_0_0__boxPc">
                     <div class="header_da_1_0_0__boxTop">
                         <div class="header_da_1_0_0__sub">đẹp theo cách bạn muốn</div>
-                        <button class="header_da_1_0_0__search modal-btn" data-modal="search">
+                        <button class="header_da_1_0_0__search modal-btn" data-modal="modal-search">
                             <img width="37" height="37" src="images/icon-search-dark.svg" alt="">
                         </button>
                         <button class="header_da_1_0_0__call bvda_call">
@@ -395,20 +395,21 @@
 
         });
     </script>
-    <link rel="stylesheet" href="Popup/popupsearch_da_1_0_0/sass/popupsearch_da_1_0_0.min.css">
-    <div class="modal popupSearch_1_0_0" id="search">
+    <link rel="stylesheet" href="Popup/popupsearch_da_1_0_0/sass/popupsearch_da_1_0_0.css">
+    <div class="modal popupsearch_da_1_0_0" id="modal-search">
         <div class="modal-bg"></div>
-        <div class="modal-box animate-zoom">
-            <div class="modal-header">
-                <div class="modal-close">×</div>
-                <div class="popupSearch_1_0_0__title">Tìm Kiếm Nhanh</div>
+        <div class="modal-box animate-pop popupsearch_da_1_0_0__box">
+            <div class="popupsearch_da_1_0_0__header">
+                <div class="modal-close popupsearch_da_1_0_0__close">&times;</div>
+                <div class="popupsearch_da_1_0_0__title">
+                    Tìm kiếm nhanh
+                </div>
             </div>
-            <div class="modal-body">
-                <form action="/" id="searchform" name="searchform" method="get" onsubmit="return checkSearch()">
-                    <div class="popupSearch_1_0_0__search">
+            <div class="popupsearch_da_1_0_0__body">
+                <form action="/" id="searchform" name="searchform" method="get">
+                    <div class="popupsearch_da_1_0_0__search">
                         <input id="s" name="s" type="text" placeholder="Nhập từ khóa tìm kiếm">
-                        <button type="submit"><img width="16" height="16"
-                                src="https://benhvienthammydonga.vn/wp-content/themes/donga/Module_v2/Popup/popup_search_1_0_0/images/search.svg"
+                        <button type="submit"><img width="37" height="37" src="images/icon-search.svg"
                                 alt="pop-search"></button>
                     </div>
                 </form>
@@ -498,6 +499,11 @@
             </div>
         </div>
     </section>
+
+
+
+
+
     <link rel="stylesheet" href="Home/doctor_da_1_0_0/sass/doctor_da_1_0_0.css">
     <section class="doctor_da_1_0_0">
         <div class="container">
@@ -506,28 +512,7 @@
                     QUỐC TẾ VÀ TRONG NƯỚC</p>
             </h2>
             <div class="doctor_da_1_0_0__box">
-                <div class="doctor_da_1_0_0__item">
-                    <a href="">
-                        <div class="doctor_da_1_0_0__img">
-                            <img width="110" height="110" src="images/bs1.png" alt="">
-                        </div>
-                        <div class="doctor_da_1_0_0__content">
-                            <h3 class="doctor_da_1_0_0__name">
-                                <p>TS.BS Park Hyo Jin</p>
-                            </h3>
-                            <span>
-                                Cố vấn chuyên môn Phẫu thuật thẩm mỹ
-                            </span>
-                            <div class="doctor_da_1_0_0__country">
-                                <img width="50" height="26" src="images/icon-korea.png" alt="">
-                            </div>
-                        </div>
-                        <div class="doctor_da_1_0_0__icon">
-                            <img src="images/icon.png" alt="">
-                        </div>
-                    </a>
-                </div>
-                <div class="doctor_da_1_0_0__item">
+                <div class="doctor_da_1_0_0__item modal-btn" data-modal="modal-doctor">
                     <div class="doctor_da_1_0_0__img">
                         <img width="110" height="110" src="images/bs1.png" alt="">
                     </div>
@@ -543,10 +528,11 @@
                         </div>
                     </div>
                     <div class="doctor_da_1_0_0__icon">
-                        <img width="12" height="15" src="images/icon.png" alt="">
+                        <img src="images/icon.png" alt="">
                     </div>
                 </div>
-                <div class="doctor_da_1_0_0__item">
+
+                <div class="doctor_da_1_0_0__item modal-btn" data-modal="modal-doctor">
                     <div class="doctor_da_1_0_0__img">
                         <img width="110" height="110" src="images/bs1.png" alt="">
                     </div>
@@ -562,10 +548,10 @@
                         </div>
                     </div>
                     <div class="doctor_da_1_0_0__icon">
-                        <img width="12" height="15" src="images/icon.png" alt="">
+                        <img src="images/icon.png" alt="">
                     </div>
                 </div>
-                <div class="doctor_da_1_0_0__item">
+                <div class="doctor_da_1_0_0__item modal-btn" data-modal="modal-doctor">
                     <div class="doctor_da_1_0_0__img">
                         <img width="110" height="110" src="images/bs1.png" alt="">
                     </div>
@@ -581,10 +567,10 @@
                         </div>
                     </div>
                     <div class="doctor_da_1_0_0__icon">
-                        <img width="12" height="15" src="images/icon.png" alt="">
+                        <img src="images/icon.png" alt="">
                     </div>
                 </div>
-                <div class="doctor_da_1_0_0__item">
+                <div class="doctor_da_1_0_0__item modal-btn" data-modal="modal-doctor">
                     <div class="doctor_da_1_0_0__img">
                         <img width="110" height="110" src="images/bs1.png" alt="">
                     </div>
@@ -600,10 +586,10 @@
                         </div>
                     </div>
                     <div class="doctor_da_1_0_0__icon">
-                        <img width="12" height="15" src="images/icon.png" alt="">
+                        <img src="images/icon.png" alt="">
                     </div>
                 </div>
-                <div class="doctor_da_1_0_0__item">
+                <div class="doctor_da_1_0_0__item modal-btn" data-modal="modal-doctor">
                     <div class="doctor_da_1_0_0__img">
                         <img width="110" height="110" src="images/bs1.png" alt="">
                     </div>
@@ -619,9 +605,29 @@
                         </div>
                     </div>
                     <div class="doctor_da_1_0_0__icon">
-                        <img width="12" height="15" src="images/icon.png" alt="">
+                        <img src="images/icon.png" alt="">
                     </div>
                 </div>
+                <div class="doctor_da_1_0_0__item modal-btn" data-modal="modal-doctor">
+                    <div class="doctor_da_1_0_0__img">
+                        <img width="110" height="110" src="images/bs1.png" alt="">
+                    </div>
+                    <div class="doctor_da_1_0_0__content">
+                        <h3 class="doctor_da_1_0_0__name">
+                            <p>TS.BS Park Hyo Jin</p>
+                        </h3>
+                        <span>
+                            Cố vấn chuyên môn Phẫu thuật thẩm mỹ
+                        </span>
+                        <div class="doctor_da_1_0_0__country">
+                            <img width="50" height="26" src="images/icon-korea.png" alt="">
+                        </div>
+                    </div>
+                    <div class="doctor_da_1_0_0__icon">
+                        <img src="images/icon.png" alt="">
+                    </div>
+                </div>
+
 
 
             </div>
@@ -640,6 +646,128 @@
 
         </div>
     </section>
+    <link rel="stylesheet" href="Popup/popupdoctor_da_1_0_0/sass/popupdoctor_da_1_0_0.css">
+    <div class="modal popupdoctor_da_1_0_0" id="modal-doctor">
+        <div class="modal-bg"></div>
+        <div class="modal-box animate-pop popupdoctor_da_1_0_0__box">
+            <div class="popupdoctor_da_1_0_0__header">
+                <div class="modal-close popupdoctor_da_1_0_0__close">&times;</div>
+                <div class="popupdoctor_da_1_0_0__title">
+                    <div class="popupdoctor_da_1_0_0__pic">
+                        <img src="images/doctor1.png" alt="">
+                    </div>
+                    <div class="popupdoctor_da_1_0_0__info">
+                        Bs. Felix Trần
+                        <p>Trưởng khoa PTTM Bệnh viện thẩm mỹ Đông Á</p>
+                    </div>
+                </div>
+            </div>
+            <div class="popupdoctor_da_1_0_0__body">
+                <div class="popupdoctor_da_1_0_0__item">
+                    <div class="popupdoctor_da_1_0_0__name">
+                        <div class="popupdoctor_da_1_0_0__icon">
+                            <img src="images/icon1.png" alt="">
+                        </div>
+                        <div class="popupdoctor_da_1_0_0__titleName">
+                            Chức vụ
+                        </div>
+                    </div>
+                    <div class="popupdoctor_da_1_0_0__des">
+                        <ul>
+                            <li>Giám đốc chuyên môn phẫu thuật Bệnh viện thẩm mỹ Đông Á
+                            </li>
+                            <li>Thành viên Hiệp hội thẩm mỹ và tái tạo gương mặt Hàn Quốc (KAFPRS)
+                            </li>
+                            <li>Thành viên Hội phẫu thuật tạo hình - Thẩm mỹ Việt Nam (VSAPS)
+                            </li>
+                            <li>Thành viên Hội phẫu thuật thẩm mỹ Châu Á - Thái Bình Dương</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="popupdoctor_da_1_0_0__item">
+                    <div class="popupdoctor_da_1_0_0__name">
+                        <div class="popupdoctor_da_1_0_0__icon">
+                            <img src="images/icon1.png" alt="">
+                        </div>
+                        <div class="popupdoctor_da_1_0_0__titleName">
+                            Chức vụ
+                        </div>
+                    </div>
+                    <div class="popupdoctor_da_1_0_0__des">
+                        <ul>
+                            <li>Giám đốc chuyên môn phẫu thuật Bệnh viện thẩm mỹ Đông Á
+                            </li>
+                            <li>Thành viên Hiệp hội thẩm mỹ và tái tạo gương mặt Hàn Quốc (KAFPRS)
+                            </li>
+                            <li>Thành viên Hội phẫu thuật tạo hình - Thẩm mỹ Việt Nam (VSAPS)
+                            </li>
+                            <li>Thành viên Hội phẫu thuật thẩm mỹ Châu Á - Thái Bình Dương</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="popupdoctor_da_1_0_0__item">
+                    <div class="popupdoctor_da_1_0_0__name">
+                        <div class="popupdoctor_da_1_0_0__icon">
+                            <img src="images/icon1.png" alt="">
+                        </div>
+                        <div class="popupdoctor_da_1_0_0__titleName">
+                            Chức vụ
+                        </div>
+                    </div>
+                    <div class="popupdoctor_da_1_0_0__des">
+                        <ul>
+                            <li>Giám đốc chuyên môn phẫu thuật Bệnh viện thẩm mỹ Đông Á
+                            </li>
+                            <li>Thành viên Hiệp hội thẩm mỹ và tái tạo gương mặt Hàn Quốc (KAFPRS)
+                            </li>
+                            <li>Thành viên Hội phẫu thuật tạo hình - Thẩm mỹ Việt Nam (VSAPS)
+                            </li>
+                            <li>Thành viên Hội phẫu thuật thẩm mỹ Châu Á - Thái Bình Dương</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="popupdoctor_da_1_0_0__item">
+                    <div class="popupdoctor_da_1_0_0__name">
+                        <div class="popupdoctor_da_1_0_0__icon">
+                            <img src="images/icon1.png" alt="">
+                        </div>
+                        <div class="popupdoctor_da_1_0_0__titleName">
+                            Chức vụ
+                        </div>
+                    </div>
+                    <div class="popupdoctor_da_1_0_0__des">
+                        <ul>
+                            <li>Giám đốc chuyên môn phẫu thuật Bệnh viện thẩm mỹ Đông Á
+                            </li>
+                            <li>Thành viên Hiệp hội thẩm mỹ và tái tạo gương mặt Hàn Quốc (KAFPRS)
+                            </li>
+                            <li>Thành viên Hội phẫu thuật tạo hình - Thẩm mỹ Việt Nam (VSAPS)
+                            </li>
+                            <li>Thành viên Hội phẫu thuật thẩm mỹ Châu Á - Thái Bình Dương</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="popupdoctor_da_1_0_0__regist">
+                <a href="#">
+                    <div class="popupdoctor_da_1_0_0__coating">
+                        <p>Xem tất cả</p>
+                    </div>
+                    <div class="popupdoctor_da_1_0_0__iconReg">
+                        <img width="12" height="15" src="images/icon.png" alt="">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
     <link rel="stylesheet" href="Home/customer_da_1_0_0/sass/customer_da_1_0_0.css">
     <section class="customer_da_1_0_0">
         <div class="container">
@@ -1089,6 +1217,9 @@
     imgTheme('Home/news_da_1_0_0/', '.news_da_1_0_0 img')
     imgTheme('Home/form_da_1_0_0/', '.form_da_1_0_0 img')
     imgTheme('Footer/footer_da_1_0_0/', '.footer_da_1_0_0 img')
+    imgTheme('Popup/popupsearch_da_1_0_0/', '.popupsearch_da_1_0_0 img')
+    imgTheme('Popup/popupdoctor_da_1_0_0/', '.popupdoctor_da_1_0_0 img')
+
 
 </script>
 
