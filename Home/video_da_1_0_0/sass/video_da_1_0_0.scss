@@ -49,10 +49,12 @@
             transition: 0.3s;
             position: relative;
             display: block;
+            transform: scale(1.02);
 
             &:hover {
                 opacity: 1;
                 cursor: pointer;
+                transform: scale(1.04);
             }
 
         }
