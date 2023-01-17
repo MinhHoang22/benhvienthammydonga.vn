@@ -25,18 +25,42 @@
 
     &__video {
         overflow: hidden;
+        background: #000;
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            background: url(../images/play.png) center 0 no-repeat;
+            background-size: 60%;
+            width: 80px;
+            height: 80px;
+            display: block;
+            left: calc(50% - 40px);
+            top: calc(50% - 25px);
+            transition: .3s;
+            opacity: 1;
+        }
 
         img {
+            opacity: 0.6;
             width: 100%;
             height: auto;
+            transition: 0.3s;
+            position: relative;
             display: block;
-            transition: all 0.2s linear;
+            transform: scale(1.02);
 
             &:hover {
-                transform: scale(1.03);
+                opacity: 1;
+                cursor: pointer;
+                transform: scale(1.04);
             }
+
         }
+
     }
+
 
     &__text {
         text-align: left;
@@ -69,16 +93,36 @@
     &__pic {
         overflow: hidden;
         width: 35%;
+        position: relative;
+        background: #000;
 
         img {
             width: 100%;
             height: auto;
             display: block;
             transition: all 0.2s linear;
+            opacity: 0.6;
+
 
             &:hover {
-                transform: scale(1.03);
+                opacity: 1;
+                transition: 0.5s;
+                cursor: pointer;
             }
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            background: url(../images/play.png) center 0 no-repeat;
+            background-size: 45%;
+            width: 60px;
+            height: 45px;
+            display: block;
+            left: calc(50% - 30px);
+            top: calc(50% - 13px);
+            transition: .3s;
+            opacity: 1;
         }
     }
 
@@ -99,6 +143,12 @@
             font-weight: 600;
             font-size: 16px;
             border-bottom: 2px solid #007471;
+        }
+
+        &:hover a {
+            color: #D8A956;
+            border-bottom: 2px solid #D8A956;
+
         }
     }
 

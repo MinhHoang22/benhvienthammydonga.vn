@@ -84,6 +84,13 @@
             font-weight: 600;
             color: #fff;
         }
+
+        &:hover a {
+            -webkit-transition: 0.5s;
+            transition: 0.5s;
+            cursor: pointer;
+            background-color: #e4b86c;
+        }
     }
 
     &__address {
@@ -126,23 +133,40 @@
         align-items: center;
         padding: 5px 10px;
         border-radius: 5px;
-        border: 1px solid #ddd;
+        border: 1px solid transparent;
+
 
         img {
             width: 17px;
             height: auto;
             margin-right: 5px;
         }
+
+        &:hover {
+            background-color: #eee;
+            cursor: pointer;
+
+        }
     }
 
     &__call {
         display: flex;
         align-items: center;
+        padding: 5px 10px;
+        border-radius: 5px;
+        border: 1px solid transparent;
 
         img {
             width: 27px;
             height: auto;
             margin-right: 5px;
+        }
+
+        &:hover {
+            background-color: #eee;
+            cursor: pointer;
+
+
         }
     }
 
