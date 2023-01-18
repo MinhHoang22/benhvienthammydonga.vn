@@ -25,6 +25,9 @@
         &:hover {
             background-color: #eee;
         }
+        h3 {
+            text-align: center;
+        }
     }
     &__pic {
         overflow: hidden;
@@ -40,8 +43,7 @@
             }
         }
     }
-    &__des {
-        text-align: center;
+    h3 {
         color: #000;
         font-size: 15px;
         font-weight: 600;
@@ -181,7 +183,7 @@
             width: 65%;
             font-size: 16px;
         }
-        &__des {
+        h3 {
             font-size: 13px;
             padding: 10px 2px;
         }
@@ -191,7 +193,7 @@
     }
     @media (max-width: 767px) {
        padding: 20px 0;
-       &__des {
+       h3 {
            font-size: 15px;
        }
     }
