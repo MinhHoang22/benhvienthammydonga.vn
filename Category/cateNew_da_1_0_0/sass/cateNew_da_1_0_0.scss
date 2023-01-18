@@ -10,6 +10,7 @@
         border-bottom: 2px solid #007471;
         text-transform: uppercase;
         padding-bottom: 5px;
+        margin: 0;
     }
     &__box {
         display: flex;
@@ -44,18 +45,17 @@
             background-color: #eee;
         }
     }
-    &__text {
+    h3 {
         text-align: left;
         color: #000;
-        font-size: 15px;
+        font-size: 16px;
         font-weight: 600;
+        margin: 0;
     }
-    &__des {
+    p {
         font-size: 13px;
         font-weight: 500;
-    }
-    &__des1 {
-        padding: 5px 0;
+        margin: 5px 0;
     }
     &__numb {
         font-size: 13px;
@@ -68,9 +68,6 @@
             height: auto;
             margin-right: 5px;
         }
-    }
-    &__text1 {
-        font-size: 16px;
     }
     &__item {
         display: flex;
