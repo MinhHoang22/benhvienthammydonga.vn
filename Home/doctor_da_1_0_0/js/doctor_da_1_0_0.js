@@ -10,18 +10,22 @@ const dataDoctor = [
       {
         title: "CHỨC VỤ",
         content: ["<li>What is Lorem Ipsum?</li>"],
+        typeIcon: 1,
       },
       {
         title: "QUÁ TRÌNH HỌC TẬP VÀ CÔNG TÁC",
         content: ["<li>What is Lorem Ipsum?</li>"],
+        typeIcon: 2,
       },
       {
         title: "KINH NGHIỆM LÀM VIỆC",
         content: ["<li>What is Lorem Ipsum?</li>"],
+        typeIcon: 3,
       },
       {
         title: "CÁC DỊCH VỤ THẨM MỸ THỰC HIỆN",
         content: ["<li>What is Lorem Ipsum?</li>"],
+        typeIcon: 4,
       },
     ],
   },
@@ -36,18 +40,22 @@ const dataDoctor = [
       {
         title: "CHỨC VỤ",
         content: ["<li>What is Lorem Ipsum?</li>"],
+        typeIcon: 1,
       },
       {
         title: "QUÁ TRÌNH HỌC TẬP VÀ CÔNG TÁC",
         content: ["<li>What is Lorem Ipsum?</li>"],
+        typeIcon: 2,
       },
       {
         title: "KINH NGHIỆM LÀM VIỆC",
         content: ["<li>What is Lorem Ipsum?</li>"],
+        typeIcon: 3,
       },
       {
         title: "CÁC DỊCH VỤ THẨM MỸ THỰC HIỆN",
         content: ["<li>What is Lorem Ipsum?</li>"],
+        typeIcon: 4,
       },
     ],
   },
@@ -62,18 +70,22 @@ const dataDoctor = [
       {
         title: "CHỨC VỤ",
         content: ["<li>What is Lorem Ipsum?</li>"],
+        typeIcon: 1,
       },
       {
         title: "QUÁ TRÌNH HỌC TẬP VÀ CÔNG TÁC",
         content: ["<li>What is Lorem Ipsum?</li>"],
+        typeIcon: 2,
       },
       {
         title: "KINH NGHIỆM LÀM VIỆC",
         content: ["<li>What is Lorem Ipsum?</li>"],
+        typeIcon: 3,
       },
       {
         title: "CÁC DỊCH VỤ THẨM MỸ THỰC HIỆN",
         content: ["<li>What is Lorem Ipsum?</li>"],
+        typeIcon: 4,
       },
     ],
   },
@@ -88,18 +100,22 @@ const dataDoctor = [
       {
         title: "CHỨC VỤ",
         content: ["<li>What is Lorem Ipsum?</li>"],
+        typeIcon: 1,
       },
       {
         title: "QUÁ TRÌNH HỌC TẬP VÀ CÔNG TÁC",
         content: ["<li>What is Lorem Ipsum?</li>"],
+        typeIcon: 2,
       },
       {
         title: "KINH NGHIỆM LÀM VIỆC",
         content: ["<li>What is Lorem Ipsum?</li>"],
+        typeIcon: 3,
       },
       {
         title: "CÁC DỊCH VỤ THẨM MỸ THỰC HIỆN",
         content: ["<li>What is Lorem Ipsum?</li>"],
+        typeIcon: 4,
       },
     ],
   },
@@ -114,18 +130,22 @@ const dataDoctor = [
       {
         title: "CHỨC VỤ",
         content: ["<li>What is Lorem Ipsum?</li>"],
+        typeIcon: 1,
       },
       {
         title: "QUÁ TRÌNH HỌC TẬP VÀ CÔNG TÁC",
         content: ["<li>What is Lorem Ipsum?</li>"],
+        typeIcon: 2,
       },
       {
         title: "KINH NGHIỆM LÀM VIỆC",
         content: ["<li>What is Lorem Ipsum?</li>"],
+        typeIcon: 3,
       },
       {
         title: "CÁC DỊCH VỤ THẨM MỸ THỰC HIỆN",
         content: ["<li>What is Lorem Ipsum?</li>"],
+        typeIcon: 4,
       },
     ],
   },
@@ -140,18 +160,22 @@ const dataDoctor = [
       {
         title: "CHỨC VỤ",
         content: ["<li>What is Lorem Ipsum?</li>"],
+        typeIcon: 1,
       },
       {
         title: "QUÁ TRÌNH HỌC TẬP VÀ CÔNG TÁC",
         content: ["<li>What is Lorem Ipsum?</li>"],
+        typeIcon: 2,
       },
       {
         title: "KINH NGHIỆM LÀM VIỆC",
         content: ["<li>What is Lorem Ipsum?</li>"],
+        typeIcon: 3,
       },
       {
         title: "CÁC DỊCH VỤ THẨM MỸ THỰC HIỆN",
         content: ["<li>What is Lorem Ipsum?</li>"],
+        typeIcon: 4,
       },
     ],
   },
@@ -167,8 +191,8 @@ const showModal = (id) => {
     body += `
               <div class="popupdoctor_da_1_0_0__item">
                   <div class="popupdoctor_da_1_0_0__name">
-                      <div class="popupdoctor_da_1_0_0__icon">
-                          <img src="images/icon1.png" alt="">
+                      <div class="popupdoctor_da_1_0_0__icon ${data[0].dataModal[i].typeIcon == 1 ? 'popupdoctor_da_1_0_0__icon--1' : data[0].dataModal[i].typeIcon == 2 ? 'popupdoctor_da_1_0_0__icon--2' : data[0].dataModal[i].typeIcon == 3 ? 'popupdoctor_da_1_0_0__icon--3' : 'popupdoctor_da_1_0_0__icon--4' }">
+                          
                       </div>
                       <div class="popupdoctor_da_1_0_0__titleName">
                           ${data[0].dataModal[i].title}
@@ -243,9 +267,7 @@ const renderData = () => {
                     : `<div class="doctor_da_1_0_0__country"><img width="50" height="26" src="${itemData.imageRegion}" alt=""></div>`
                 }
             </div>
-            <div class="doctor_da_1_0_0__icon">
-                <img width="35" height="28" src="images/icon.png" alt="">
-            </div>
+            <div class="doctor_da_1_0_0__icon"></div>
         </div>
         `;
   }
