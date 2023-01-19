@@ -2,32 +2,14 @@ const dataDoctor = [
   {
     id: 1,
     name: "TS.BS Park Hyo Jin",
-    position: "Cố vấn chuyên môn Phẫu thuật thẩm mỹ",
+    position: "Trưởng khoa PTTM Bệnh viện thẩm mỹ Đông Á",
+    category: "Phẫu thuật thẩm mỹ",
+    description: "<ul><li>content</li></ul>",
+    showHome: true,
     imageRegion: "images/icon-korea.png",
     image: "images/bs1.png",
     imageModal: "images/doctor1.png",
-    dataModal: [
-      {
-        title: "CHỨC VỤ",
-        content: ["<li>What is Lorem Ipsum?</li>"],
-        typeIcon: 1,
-      },
-      {
-        title: "QUÁ TRÌNH HỌC TẬP VÀ CÔNG TÁC",
-        content: ["<li>What is Lorem Ipsum?</li>"],
-        typeIcon: 2,
-      },
-      {
-        title: "KINH NGHIỆM LÀM VIỆC",
-        content: ["<li>What is Lorem Ipsum?</li>"],
-        typeIcon: 3,
-      },
-      {
-        title: "CÁC DỊCH VỤ THẨM MỸ THỰC HIỆN",
-        content: ["<li>What is Lorem Ipsum?</li>"],
-        typeIcon: 4,
-      },
-    ],
+    dataModal: "<ul><li>content</li></ul>",
   },
   {
     id: 2,
