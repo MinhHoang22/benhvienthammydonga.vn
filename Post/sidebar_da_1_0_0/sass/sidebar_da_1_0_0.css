@@ -59,10 +59,11 @@
 .sidebar_da_1_0_0__img img:hover {
   transform: scale(1.06);
 }
-.sidebar_da_1_0_0__text {
+.sidebar_da_1_0_0 h3 {
   font-weight: 600;
-  padding: 5px 0;
-  font-size: 13px;
+  padding: 5px;
+  font-size: 15px;
+  margin: 0;
 }
 .sidebar_da_1_0_0__form {
   width: 100%;
