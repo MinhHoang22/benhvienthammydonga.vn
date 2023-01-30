@@ -11,6 +11,7 @@
   border-bottom: 2px solid #007471;
   text-transform: uppercase;
   padding-bottom: 5px;
+  margin: 0;
 }
 .cateNew_da_1_0_0__box {
   display: flex;
@@ -45,18 +46,17 @@
 .cateNew_da_1_0_0__wrap:hover {
   background-color: #eee;
 }
-.cateNew_da_1_0_0__text {
+.cateNew_da_1_0_0 h3 {
   text-align: left;
   color: #000;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 600;
+  margin: 0;
 }
-.cateNew_da_1_0_0__des {
+.cateNew_da_1_0_0 p {
   font-size: 13px;
   font-weight: 500;
-}
-.cateNew_da_1_0_0__des1 {
-  padding: 5px 0;
+  margin: 5px 0;
 }
 .cateNew_da_1_0_0__numb {
   font-size: 13px;
@@ -69,9 +69,6 @@
   width: 15px;
   height: auto;
   margin-right: 5px;
-}
-.cateNew_da_1_0_0__text1 {
-  font-size: 16px;
 }
 .cateNew_da_1_0_0__item {
   display: flex;
