@@ -1,5 +1,6 @@
 .doctor_da_1_0_0 {
-    padding: 40px 0;
+    margin-top: 120px;
+    margin-bottom: 30px;
 
     &__title {
         text-align: center;
@@ -7,13 +8,14 @@
         font-size: 26px;
         font-weight: 600;
         padding-bottom: 35px;
+        margin: 0;
     }
 
     &__tabsBox {
         border-bottom: 2px solid #F5F5F5;
     }
-    
-    &__tabs{
+
+    &__tabs {
         display: flex;
         margin: auto;
         max-width: 70%;
@@ -44,18 +46,19 @@
             display: block;
         }
 
-        &Box{
+        &Box {
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
             grid-row-gap: 40px;
+            margin-left: 5%;
         }
     }
 
     &__item {
         display: flex;
         position: relative;
-        max-width: 530px;
+        max-width: 47%;
         width: 100%;
         border-radius: 5px;
         box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1);
@@ -64,10 +67,11 @@
     &__person {
         margin-left: -10%;
         width: 30%;
+
         img {
             object-fit: cover;
             width: 100%;
-            height: auto;
+            height: 100%;
             display: block;
         }
     }
@@ -84,7 +88,7 @@
         margin-bottom: 3px;
     }
 
-    &__content ul{
+    &__content ul {
         padding: 0;
         list-style-type: none;
         margin: 0;
@@ -98,7 +102,7 @@
         align-items: center;
     }
 
-    &__country{
+    &__country {
         margin-left: 10px;
     }
 
@@ -113,31 +117,7 @@
         right: 20px;
         bottom: -15px;
     }
-    @media (max-width: 1200px){
-        &__tabs{
-            max-width: 60%;
-        }
-        &__item{
-            max-width: 440px;
-        }
-    }
-    @media (max-width: 992px){
-        &__item{
-            max-width: 420px;
-        }
-    }
-    @media (max-width: 768px){
-        &__tabs{
-            max-width: 100%;
-        }
-        &__item{
-            width: 100%;
-            max-width: 100%;
-        }
-    }
-}
 
-.regist_da_1_0_0 {
     &__regist {
         background: #D8A956;
         position: relative;
@@ -186,4 +166,107 @@
         background: #007471;
     }
 
+
+    @media (max-width: 1200px) {
+        margin-top: 75px;
+        &__tabs {
+            max-width: 60%;
+        }
+    }
+
+    @media (max-width: 992px){
+        &__person {
+            margin-left: -5%;
+        }
+        &__info{
+            width: calc(70% + 5%);
+            padding: 10px 10px 30px 10px;
+        }
+        &__country img{
+            width: 35px;
+            height: auto;
+        }
+        &__tabcontent {
+    
+            &Box {
+                margin-left: 3%;
+            }
+        }
+    }
+
+    @media (max-width: 767px) {
+        margin-top: 20px;
+        &__title{
+            font-size: 24px;
+            padding-bottom: 20px;
+        }
+        &__tabsBox {
+            width: calc(100% + 30px);
+            margin: 0 -15px;
+        }
+
+        &__tabs {
+            max-width: 100%;
+            border-radius: 0;
+        }
+
+        &__tablink {
+            padding: 10px 10px;
+            font-size: 17px;
+            &.current {
+                &:first-child {
+                    border-radius: 0px 35px 0 0;
+                }
+
+                &:last-child {
+                    border-radius: 35px 0px 0 0;
+                }
+            }
+        }
+
+        &__tabcontent {
+    
+            &Box {
+                margin-left: 0;
+            }
+        }
+
+        &__item {
+            max-width: 100%;
+        }
+
+        &__person{
+            margin-left: -2%;
+        }
+
+        &__info {
+            width: calc(70% + 2%);
+        }
+        &__country{
+            img{
+                width: 35px;
+                height: auto;
+            }
+        }
+    }
+
+    @media (max-width: 320px){
+        &__title{
+            font-size: 20px;
+            padding-bottom: 10px;
+        }
+        &__tablink{
+            font-size: 12px;
+        }
+        &__name{
+            font-size: 13px;
+        }
+        &__tabcontentBox{
+            font-size: 12px;
+        }
+        &__regist{
+            min-width: 120px;
+            font-size: 13px;
+        }
+    }
 }

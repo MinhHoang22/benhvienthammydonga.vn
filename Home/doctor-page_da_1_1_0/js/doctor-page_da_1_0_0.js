@@ -71,7 +71,7 @@ const showModal = (id, arr) => {
                   <div class="modal-close popupdoctor_da_1_0_0__close">&times;</div>
                   <div class="popupdoctor_da_1_0_0__title">
                       <div class="popupdoctor_da_1_0_0__pic">
-                          <img src="${data[0].imageModal}" alt="">
+                          <img width="270" height="400" src="${data[0].imageModal}" alt="">
                       </div>
                       <div class="popupdoctor_da_1_0_0__info">
                           ${data[0].name}
@@ -88,7 +88,7 @@ const showModal = (id, arr) => {
                           <p>Đăng ký khám</p>
                       </div>
                       <div class="popupdoctor_da_1_0_0__iconReg">
-                          <img width="12" height="15" src="images/icon.png" alt="">
+                          <img width="12" height="15" src="/wp-content/themes/SCI_Theme/Module/Home/doctor-page_da_1_0_0/images/icon.png" alt="">
                       </div>
                   </a>
               </div>
@@ -118,7 +118,7 @@ const renderList = (arr, filter) => {
     html += `
       <div class="doctor_da_1_0_0__item">
           <div class="doctor_da_1_0_0__person">
-              <img width="" height="" src="${dataIndex.imageModal}" alt="">
+              <img width="240" height="700" src="${dataIndex.imageModal}" alt="">
           </div>
           <div class="doctor_da_1_0_0__info">
               <div class="doctor_da_1_0_0__name">${dataIndex.name}
@@ -135,13 +135,13 @@ const renderList = (arr, filter) => {
               </div>
           </div>
           <div class="doctor_da_1_0_0__reg">
-              <div class="regist_da_1_0_0__regist btn-2">
+              <div class="doctor_da_1_0_0__regist btn-2">
                   <a href="#">
-                      <div class="regist_da_1_0_0__coating">
+                      <div class="doctor_da_1_0_0__coating">
                           <p>Đăng ký khám</p>
                       </div>
-                      <div class="regist_da_1_0_0__iconReg">
-                          <img src="images/icon.png" alt="">
+                      <div class="doctor_da_1_0_0__iconReg">
+                          <img width="12" height="15" src="/wp-content/themes/SCI_Theme/Module/Home/doctor-page_da_1_0_0/images/icon.png" alt="">
                       </div>
                   </a>
               </div>
@@ -173,4 +173,4 @@ const clickPop = () => {
 const elements = document.querySelectorAll(".doctor_da_1_0_0__tablink");
 elements[0].classList.add('current');
 renderList(dataDoctor, dataDoctor[0].category);
-clickPop()
+clickPop();
