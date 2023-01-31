@@ -50,12 +50,12 @@ const category =  categories.filter((item, index) => {
 const renderTabs = (arr) => {
   let html = "";
   for (item of arr){
-    html += `<div class="doctor_da_1_0_0__tablink" data-tab="${item}" onclick="renderData(this)">${item}</div>`;
+    html += `<div class="doctor_da_2_0_0__tablink" data-tab="${item}" onclick="renderData(this)">${item}</div>`;
   }
   return html;
 };
 
-document.getElementsByClassName("doctor_da_1_0_0__tabs")[0].innerHTML = renderTabs(category);
+document.getElementsByClassName("doctor_da_2_0_0__tabs")[0].innerHTML = renderTabs(category);
 
 
 const showModal = (id, arr) => {
@@ -95,11 +95,11 @@ const showModal = (id, arr) => {
           </div>
       </div>
      `;
-  document.getElementsByClassName("doctor_da_1_0_0")[0].insertAdjacentHTML("beforeend", html);
+  document.getElementsByClassName("doctor_da_2_0_0")[0].insertAdjacentHTML("beforeend", html);
 };
 
 const renderData = (ele) => {
-  const elements = document.querySelectorAll(".doctor_da_1_0_0__tablink");
+  const elements = document.querySelectorAll(".doctor_da_2_0_0__tablink");
   elements.forEach(function(element) {
     element.classList.remove("current");
   });
@@ -116,31 +116,31 @@ const renderList = (arr, filter) => {
   });
   for (let dataIndex of dataTab) {
     html += `
-      <div class="doctor_da_1_0_0__item">
-          <div class="doctor_da_1_0_0__person">
+      <div class="doctor_da_2_0_0__item">
+          <div class="doctor_da_2_0_0__person">
               <img width="240" height="700" src="${dataIndex.imageModal}" alt="">
           </div>
-          <div class="doctor_da_1_0_0__info">
-              <div class="doctor_da_1_0_0__name">${dataIndex.name}
+          <div class="doctor_da_2_0_0__info">
+              <div class="doctor_da_2_0_0__name">${dataIndex.name}
               ${
                 dataIndex.imageRegion === "none"
                   ? ""
-                  : `<div class="doctor_da_1_0_0__country"><img width="50" height="26" src="${dataIndex.imageRegion}" alt=""></div>`
+                  : `<div class="doctor_da_2_0_0__country"><img width="50" height="26" src="${dataIndex.imageRegion}" alt=""></div>`
               }
               </div>
-              <div class="doctor_da_1_0_0__position">${dataIndex.position}</div>
-              <div class="doctor_da_1_0_0__content">
+              <div class="doctor_da_2_0_0__position">${dataIndex.position}</div>
+              <div class="doctor_da_2_0_0__content">
                   ${dataIndex.description}
-                  <a href="#" class="doctor_da_1_0_0__more" data-id="${dataIndex.id}">Xem thêm</a>
+                  <a href="#" class="doctor_da_2_0_0__more" data-id="${dataIndex.id}">Xem thêm</a>
               </div>
           </div>
-          <div class="doctor_da_1_0_0__reg">
-              <div class="doctor_da_1_0_0__regist btn-2">
+          <div class="doctor_da_2_0_0__reg">
+              <div class="doctor_da_2_0_0__regist btn-2">
                   <a href="#">
-                      <div class="doctor_da_1_0_0__coating">
+                      <div class="doctor_da_2_0_0__coating">
                           <p>Đăng ký khám</p>
                       </div>
-                      <div class="doctor_da_1_0_0__iconReg">
+                      <div class="doctor_da_2_0_0__iconReg">
                           <img width="12" height="15" src="/wp-content/themes/SCI_Theme/Module/Home/doctor-page_da_1_0_0/images/icon.png" alt="">
                       </div>
                   </a>
@@ -153,7 +153,7 @@ const renderList = (arr, filter) => {
 }
 
 const clickPop = () => {
-  const popBtn = document.querySelectorAll(".doctor_da_1_0_0__more");
+  const popBtn = document.querySelectorAll(".doctor_da_2_0_0__more");
   for (let i = 0; i < popBtn.length; i++) {
     popBtn[i].addEventListener("click", () => {
       const idPop = popBtn[i].getAttribute('data-id');
@@ -170,7 +170,7 @@ const clickPop = () => {
   }
 }
 
-const elements = document.querySelectorAll(".doctor_da_1_0_0__tablink");
+const elements = document.querySelectorAll(".doctor_da_2_0_0__tablink");
 elements[0].classList.add('current');
 renderList(dataDoctor, dataDoctor[0].category);
 clickPop();
