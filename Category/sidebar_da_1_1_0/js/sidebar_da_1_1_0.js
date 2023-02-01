@@ -49,7 +49,7 @@ const renderData = (obj) => {
         html += `
             <a href="${item.link}" class="sidebar_da_1_1_0__content">
                 <div class="sidebar_da_1_1_0__pic">
-                    <img src="${item.image}" alt="">
+                    <img width="576" height="408" src="${item.image}" alt="">
                 </div>
                 <div class="sidebar_da_1_1_0__des">${item.name}</div>
             </a>
