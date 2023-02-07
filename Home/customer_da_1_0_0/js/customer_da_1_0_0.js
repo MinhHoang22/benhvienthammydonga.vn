@@ -219,7 +219,7 @@ const dataPhoto = [
   {
     name: "Trị thâm ",
     link: "#tri-tham",
-    showHome: "false",
+    showHome: "true",
     img: [
       {
         small:
@@ -237,7 +237,9 @@ const renderData = (obj) => {
         return item.showHome === "true";
     });
 
-    newData.map(item => {
+    let dataLimit = newData.slice(0, 6);
+
+    dataLimit.map(item => {
         html += `
             <a class="customer_da_1_0_0__item">
                 <div class="customer_da_1_0_0__pic">
