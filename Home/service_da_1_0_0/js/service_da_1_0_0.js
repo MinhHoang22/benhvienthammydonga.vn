@@ -27,7 +27,7 @@ const dataService = [
         name: "Nâng mũi cấu trúc Nano 5",
         image: "images/cateService_da_1_0_0-2.jpg",
         link: "https://benhvienthammydonga.vn/tham-my-mui/nang-mui-cau-truc/?new",
-        show: "false",
+        show: "true",
     },
     {
         name: "Nâng mũi cấu trúc Nano 6",
@@ -54,8 +54,9 @@ const dataShow = dataService.filter(item => {
 });
 
 const renderData = (obj) => {
+    let dataLimit = obj.slice(0, 6);
     let html = "";
-    obj.map(item => {
+    dataLimit.map(item => {
         html += `
             <a href="${item.link}" class="service_da_1_0_0__item">
                 <div class="service_da_1_0_0__pic">
