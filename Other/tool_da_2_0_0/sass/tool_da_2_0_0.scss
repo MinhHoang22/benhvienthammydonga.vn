@@ -23,94 +23,52 @@
             font-size: 16px;
         }
 
-        &--home {
-            background-image: url(../images/home.png);
+        & .img {
             background-size: contain;
             background-repeat: no-repeat;
             width: 20px;
             height: 22px;
             margin: 0 auto;
+        }
+
+        &--home {
+            background-image: url(../images/home.png);
         }
 
         .active &--home {
             background-image: url(../images/home-hover.png);
-            background-size: contain;
-            background-repeat: no-repeat;
-            width: 20px;
-            height: 22px;
-            margin: 0 auto;
         }
 
         &--video {
             background-image: url(../images/film.png);
-            background-size: contain;
-            background-repeat: no-repeat;
-            width: 20px;
-            height: 22px;
-            margin: 0 auto;
         }
 
         .active &--video {
             background-image: url(../images/film-hover.png);
-            background-size: contain;
-            background-repeat: no-repeat;
-            width: 20px;
-            height: 22px;
-            margin: 0 auto;
         }
 
         &--image {
             background-image: url(../images/image.png);
-            background-size: contain;
-            background-repeat: no-repeat;
-            width: 20px;
-            height: 22px;
-            margin: 0 auto;
         }
 
         .active &--image {
             background-image: url(../images/image-hover.png);
-            background-size: contain;
-            background-repeat: no-repeat;
-            width: 20px;
-            height: 22px;
-            margin: 0 auto;
         }
 
         &--price {
             background-image: url(../images/dollar-sign.png);
-            background-size: contain;
-            background-repeat: no-repeat;
-            width: 20px;
-            height: 22px;
-            margin: 0 auto;
         }
 
         .active &--price {
             background-image: url(../images/dollar-sign-hover.png);
-            background-size: contain;
-            background-repeat: no-repeat;
-            width: 20px;
-            height: 22px;
-            margin: 0 auto;
         }
 
         &--gift {
             background-image: url(../images/gift.png);
-            background-size: contain;
-            background-repeat: no-repeat;
-            width: 20px;
-            height: 22px;
-            margin: 0 auto;
         }
 
         .active &--gift {
             background-image: url(../images/gift-hover.png);
-            background-size: contain;
-            background-repeat: no-repeat;
-            width: 20px;
-            height: 22px;
-            margin: 0 auto;
         }
 
     }
