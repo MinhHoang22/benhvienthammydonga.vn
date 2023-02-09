@@ -5,3 +5,28 @@ tools.forEach(a => {
         this.classList.add('active');
     });
 });
+
+const isActive = (id) => {
+    document.getElementById(id).classList.add('active');
+}
+
+const cateSlug = 'toolVideo';
+switch (cateSlug) {
+    case 'toolHome':
+        isActive(cateSlug);
+        break;
+    case 'toolVideo':
+        isActive(cateSlug);
+        break;
+    case 'toolImage':
+        isActive(cateSlug);
+        break;
+    case 'toolPrice':
+        isActive(cateSlug);
+        break;
+    case 'toolGift':
+        isActive(cateSlug);
+        break;
+    default:
+        isActive('toolHome');
+}
