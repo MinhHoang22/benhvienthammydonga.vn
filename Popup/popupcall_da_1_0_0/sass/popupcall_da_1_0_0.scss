@@ -6,6 +6,7 @@
         background-color: #007471;
         border-radius: 30px;
         padding: 20px 20px;
+        max-width: 390px;
     }
     &__close{
         color: #fff;
@@ -43,7 +44,7 @@
         background: #D8A956;
         position: relative;
         min-width: 130px;
-        width: 30%;
+        width: 45%;
         margin: 0px auto;
         border-radius: 5px;
         font-weight: 600;
@@ -60,7 +61,7 @@
     &__coating2 {
         background: #fff;
         border-radius: 5px 87px 0px 5px;
-        padding: 15px 0;
+        padding: 12px 0;
         text-align: center;
         width: 95%;
     }
