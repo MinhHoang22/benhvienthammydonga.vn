@@ -167,6 +167,7 @@
     }
 
     @media (max-width: 767px) {
+        border-top: 10px solid #F5F5F5;
         padding: 0;
 
         &__content {
@@ -176,6 +177,26 @@
         &__box {
             gap: 15px;
         }
+
+        &__title{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        &__btn {
+            &--pc{
+                display: none;
+            }
+            &--mb{
+                display: block;
+                color: #007471;
+                font-weight: 600;
+                font-size: 16px;
+                text-transform: none;
+                border-bottom: 1px solid #007471;
+            }
+        } 
     }
 
     @media (max-width: 320px) {
