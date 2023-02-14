@@ -64,13 +64,15 @@
 .sidebar_da_1_1_0 {
     &__title {
         background: #F0FBFA;
-        font-size: 24px;
         color: #007471;
-        font-weight: 600;
         text-transform: uppercase;
         padding: 5px 10px;
         button {
             display: none;
+        }
+        h2{
+            font-size: 24px;
+            font-weight: 600;
         }
     }
     ul {
@@ -82,8 +84,13 @@
         li {
             padding: 5px 0;
             cursor: pointer;
+            h2{
+                font-size: 15px;
+            }
             &.active {
-                font-weight: 600;
+                h2{
+                    font-weight: 600;
+                }
             }
             a {
                 display: block;
@@ -91,7 +98,7 @@
         }
     }
     @media(max-width:1180px) {
-        &__title {
+        &__title h2 {
             font-size: 18px;
         }
         ul {
@@ -103,7 +110,9 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            font-size: 16px;
+            h2{
+                font-size: 16px;
+            }
             button {
                 padding: 0;
                 display: block;
@@ -138,7 +147,7 @@
         display: flex;
         flex-wrap: wrap;
         gap: 20px;
-        justify-content: center;
+        justify-content: space-between;
     }
     &__item {
         width: 48%;
