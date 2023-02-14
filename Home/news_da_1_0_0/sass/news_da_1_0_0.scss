@@ -158,6 +158,7 @@
     }
 
     @media (max-width: 767px) {
+        padding: 20px 0 0;
         &__content {
             width: 100%;
         }
@@ -182,7 +183,7 @@
                 font-weight: 600;
                 font-size: 16px;
                 text-transform: none;
-                border-bottom: 1px solid #007471;
+                text-decoration: underline;
             }
         }    
     }
