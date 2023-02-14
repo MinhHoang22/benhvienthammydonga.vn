@@ -27,7 +27,7 @@ const price_da_1_0_0_handleChangeTab = (name, link) => {
 
 // component MenuItem
 const price_da_1_0_0_MenuItem = (item, active) => {
-    return `<li onclick="price_da_1_0_0_handleChangeTab('${item.name}','${item.link}')" class="${active?'active':''}"><a href="${item.link}" >${item.name}</a></li>`
+    return `<li onclick="price_da_1_0_0_handleChangeTab('${item.name}','${item.link}')" class="${active?'active':''}"><h2 class="sidebar_da_1_1_0__titleTab"><a href="${item.link}" >${item.name}</a></h2></li>`
 }
 
 // giao diện chính
@@ -45,7 +45,7 @@ const price_da_1_0_0_main = (data) => {
                 <div class="price_1_0_0__sidebar">
                     <div class="sidebar_da_1_1_0">
                         <div class="sidebar_da_1_1_0__title">
-                            <span>${price_da_1_0_0_title}</span>
+                            <h2 class="sidebar_da_1_1_0__titleHead">${price_da_1_0_0_title}</h2>
                             <button onclick="price_da_1_0_0_handleOpenMenu()">Chọn dịch vụ khác</button>
                         </div>
                         ${price_da_1_0_0_isOpenMenu ?`<ul class='slideIn'>${tab}</ul>`:``}

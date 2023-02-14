@@ -85,7 +85,7 @@ const video_da_1_1_0_handleCloseModal = () => {
 
 // component MenuItem
 const video_da_1_1_0_MenuItem = (item, active) => {
-    return `<li onclick="video_da_1_1_0_handleChangeTab('${item.name}','${item.link}')" class="${active?'active':''}"><a href="${item.link}" >${item.name}</a></li>`
+    return `<li onclick="video_da_1_1_0_handleChangeTab('${item.name}','${item.link}')" class="${active?'active':''}"><h2 class="sidebar_da_1_0_0__titleTab"><a href="${item.link}" >${item.name}</a></h2></li>`
 }
 
 // component PicItem
@@ -95,7 +95,7 @@ const video_da_1_1_0_PicItem = ({ smallImg, desc, idx }) => {
     <div class="video_da_1_1_0__play">
         <img width="50" height="50" src="${video_da_1_1_0_url}/images/play-icon.svg" alt="">
     </div>
-    <div class="video_da_1_1_0__desc">${desc}</div>
+    <h3 class="video_da_1_1_0__desc">${desc}</h3>
 </div>`
 }
 
@@ -140,7 +140,7 @@ const video_da_1_1_0_main = (data) => {
                 <div class="video_1_0_0__sidebar">
                     <div class="sidebar_da_1_0_0">
                         <div class="sidebar_da_1_0_0__title">
-                            <span>${video_da_1_1_0_title}</span>
+                            <h2 class="sidebar_da_1_0_0__titleHead">${video_da_1_1_0_title}</h2>
                             <button onclick="video_da_1_1_0_handleOpenMenu()">Chọn dịch vụ khác</button>
                         </div>
                         ${video_da_1_1_0_isOpenMenu ?`<ul class="slideIn">${tab}</ul>`:``}
@@ -149,7 +149,7 @@ const video_da_1_1_0_main = (data) => {
                 </div>
                 <div class="video_1_0_0__content">
                     <div class="video_da_1_1_0">
-                        <div class="video_da_1_1_0__title">Hình ảnh trước - sau</div>
+                        <h1 class="video_da_1_1_0__title">Hình ảnh trước - sau</h1>
                         <div class="video_da_1_1_0__box">
                             ${picItem}
                         </div>
