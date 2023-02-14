@@ -85,14 +85,14 @@ const photo_da_1_1_0_handleCloseModal = () => {
 
 // component MenuItem
 const photo_da_1_1_0_MenuItem = (item, active) => {
-    return `<li onclick="photo_da_1_1_0_handleChangeTab('${item.name}','${item.link}')" class="${active?'active':''}"><a href="${item.link}" >${item.name}</a></li>`
+    return `<li onclick="photo_da_1_1_0_handleChangeTab('${item.name}','${item.link}')" class="${active?'active':''}"><h2 class="sidebar_da_1_1_0__titleTab"><a href="${item.link}" >${item.name}</a></h2></li>`
 }
 
 // component PicItem
 const photo_da_1_1_0_PicItem = (item, i) => {
-    return `<div onclick="photo_da_1_1_0_handleOpenModal('${item}',${i})" class="photo_da_1_1_0__item">
+    return `<h3 onclick="photo_da_1_1_0_handleOpenModal('${item}',${i})" class="photo_da_1_1_0__item">
             <img width="390" height="211" src="${item}" alt="">
-        </div>`
+        </h3>`
 }
 
 // component PicModal
@@ -131,7 +131,7 @@ const photo_da_1_1_0_main = (data) => {
                 <div class="photo_1_1_0__sidebar">
                     <div class="sidebar_da_1_1_0">
                         <div class="sidebar_da_1_1_0__title">
-                            <span>${photo_da_1_1_0_title}</span>
+                            <h2 class="sidebar_da_1_1_0__titleHead">${photo_da_1_1_0_title}</h2>
                             <button onclick="photo_da_1_1_0_handleOpenMenu()">Chọn dịch vụ khác</button>
                         </div>
                         ${photo_da_1_1_0_isOpenMenu ?`<ul class='slideIn'>${tab}</ul>`:``}
@@ -140,7 +140,7 @@ const photo_da_1_1_0_main = (data) => {
                 </div>
                 <div class="photo_1_1_0__content">
                     <div class="photo_da_1_1_0">
-                        <div class="photo_da_1_1_0__title">Hình ảnh trước - sau</div>
+                        <h1 class="photo_da_1_1_0__title">Hình ảnh trước - sau</h1>
                         <div class="photo_da_1_1_0__box">
                             ${picItem}
                         </div>
