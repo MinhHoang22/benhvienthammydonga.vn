@@ -64,14 +64,19 @@
 .sidebar_da_1_1_0 {
     &__title {
         background: #F0FBFA;
-        font-size: 24px;
         color: #007471;
-        font-weight: 600;
         text-transform: uppercase;
         padding: 5px 10px;
         button {
             display: none;
         }
+        &Head{
+            font-size: 24px;
+            font-weight: 600;
+        }
+    }
+    &__titleTab{
+        font-size: 15px;
     }
     ul {
         background: #F5F5F5;
@@ -83,7 +88,9 @@
             padding: 5px 0;
             cursor: pointer;
             &.active {
-                font-weight: 600;
+                .sidebar_da_1_1_0__titleTab{
+                    font-weight: 600;
+                }
             }
             a {
                 display: block;
@@ -91,7 +98,7 @@
         }
     }
     @media(max-width:1180px) {
-        &__title {
+        &__titleHead {
             font-size: 18px;
         }
         ul {
@@ -103,7 +110,9 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            font-size: 16px;
+            &Head{
+                font-size: 16px;
+            }
             button {
                 padding: 0;
                 display: block;
