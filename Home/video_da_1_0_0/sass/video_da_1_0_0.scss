@@ -138,6 +138,10 @@
     &__btn {
         text-align: center;
 
+        &--mb{
+            display: none;
+        }
+
         a {
             color: #007471;
             font-weight: 600;
@@ -168,7 +172,7 @@
 
     @media (max-width: 767px) {
         border-top: 10px solid #F5F5F5;
-        padding: 0;
+        padding: 20px 0 0;
 
         &__content {
             width: 100%;
@@ -194,7 +198,7 @@
                 font-weight: 600;
                 font-size: 16px;
                 text-transform: none;
-                border-bottom: 1px solid #007471;
+                text-decoration: underline;
             }
         } 
     }
