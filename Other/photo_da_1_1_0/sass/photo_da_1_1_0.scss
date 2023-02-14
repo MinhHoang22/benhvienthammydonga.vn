@@ -13,6 +13,9 @@
     display: flex;
     gap: 20px;
     justify-content: center;
+    h1, h2, h3{
+        margin: 0;
+    }
     &__sidebar {
         width: 25%;
     }
@@ -70,10 +73,13 @@
         button {
             display: none;
         }
-        h2{
+        &Head{
             font-size: 24px;
             font-weight: 600;
         }
+    }
+    &__titleTab{
+        font-size: 15px;
     }
     ul {
         background: #F5F5F5;
@@ -84,11 +90,8 @@
         li {
             padding: 5px 0;
             cursor: pointer;
-            h2{
-                font-size: 15px;
-            }
             &.active {
-                h2{
+                .sidebar_da_1_1_0__titleTab{
                     font-weight: 600;
                 }
             }
@@ -98,7 +101,7 @@
         }
     }
     @media(max-width:1180px) {
-        &__title h2 {
+        &__titleHead {
             font-size: 18px;
         }
         ul {
@@ -110,7 +113,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            h2{
+            &Head{
                 font-size: 16px;
             }
             button {
@@ -141,7 +144,7 @@
         font-weight: 600;
         text-transform: uppercase;
         text-align: center;
-        margin-bottom: 20px;
+        margin-bottom: 20px !important;
     }
     &__box {
         display: flex;
