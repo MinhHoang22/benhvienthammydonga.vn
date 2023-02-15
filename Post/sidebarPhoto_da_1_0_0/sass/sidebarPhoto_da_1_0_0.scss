@@ -41,5 +41,16 @@
     }
     @media (max-width: 767px) {
        padding: 20px 0 0;
+       position: relative;
+       &::before{
+        content: '';
+        position: absolute;
+        height: 10px;
+        width: 100vw;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #F5F5F5;
+       }
     }
 }
