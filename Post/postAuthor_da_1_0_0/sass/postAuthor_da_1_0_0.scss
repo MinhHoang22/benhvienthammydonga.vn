@@ -40,12 +40,26 @@
             color: #105496;
         }
     }
-    .line {
-        border-top: 2px solid #ddeeff;
-    }
     @media (max-width: 1180px) {
         &__navg {
             flex-wrap: wrap;
+        }
+    }
+    @media (max-width: 767px) {
+        li {
+            padding-left: 10px;
+        }
+        &__Date {
+            order: 1;
+        }
+        &__Person {
+            order: 2;
+        }
+        &__Doctor {
+            order: 4;
+        }
+        &__View {
+            order: 3;   
         }
     }
     @media (max-width: 480px) {

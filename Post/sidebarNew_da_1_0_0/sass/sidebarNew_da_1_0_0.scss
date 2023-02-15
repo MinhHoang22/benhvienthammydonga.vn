@@ -13,7 +13,7 @@
     }
     &__img {
         overflow: hidden;
-        width: 45%;
+        width: 30%;
         border-top-left-radius: 5px;
         border-bottom-left-radius: 5px;
         img {
@@ -21,7 +21,8 @@
             height: auto;
             display: block;
             transform: scale(1.02);
-            transition: all 0.2s linear;
+            transition: all .2s linear;
+            object-position: center;
             &:hover {
                 transform: scale(1.06);
             }
@@ -32,6 +33,7 @@
         padding: 5px;
         font-size: 15px;
         margin: 0;
+        width: 70%;
     }
     &__title {
         font-size: 20px;
