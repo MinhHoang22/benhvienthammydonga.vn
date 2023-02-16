@@ -71,7 +71,6 @@
     }
     &__item {
         display: flex;
-        align-items: center;
         box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
         margin-bottom: 15px;
         transition: all 0.2s linear;
@@ -84,7 +83,8 @@
         width: 35%;
         img {
             width: 100%;
-            height: auto;
+            height: 100%;
+            object-fit: cover;
             display: block;
             transform: scale(1.02);
             transition: all 0.2s linear;
