@@ -83,7 +83,7 @@
 
     &__position {
         color: #D8A956;
-        border-bottom: 1px solid #000;
+        border-bottom: 1px solid #007471;
         padding-bottom: 3px;
         margin-bottom: 3px;
     }
@@ -92,7 +92,14 @@
         padding: 0;
         list-style-type: none;
         margin: 0;
-        display: inline-block;
+        display: inline;
+        li:last-child{
+            display: inline-block;
+            width: 50%;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
     }
 
     &__name {
@@ -109,7 +116,9 @@
     &__more {
         display: inline-block;
         color: #007471;
-        border-bottom: 1px solid #007471;
+        text-decoration: underline;
+        position: relative;
+        top: -5px;
     }
 
     &__reg {
