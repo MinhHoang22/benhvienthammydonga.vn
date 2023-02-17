@@ -6,7 +6,7 @@ const dataNew = [
     excerpt:
       "Thẩm mỹ mũi đang là xu hướng của phụ nữ hiện nay. Cùng với đó là sự thay đổi về phương pháp và chất liệu sụn. Trong đó nâng mũi sụn silicon và surgiform đang rất được ưa chuộng trên thị trường. Hai loại sụn này có đặc điểm",
     cate: "Thẩm mỹ mũi",
-    cateGroup: "Điều trị - Trẻ hóa da",
+    cateGroup: "Điều trị trẻ hóa da",
     date: "15 Tháng Hai, 2023",
   },
   {
@@ -161,13 +161,37 @@ const dataNew = [
   },
 ];
 
-const categories = [];
+const cateNewCategories = [];
 dataNew.map((item) => {
-  categories.push(item.cateGroup);
+  cateNewCategories.push(item.cateGroup);
 });
-const category = categories.filter((item, index) => {
-  return categories.indexOf(item) === index;
+const cateNewCategory = cateNewCategories.filter((item, index) => {
+  return cateNewCategories.indexOf(item) === index;
 });
+
+let catNewCate = [];
+
+if (cateNewCategory.length > 2) {
+  const addCateList = (name, index) => {
+    catNewCate[index] = name;
+  };
+
+  for (let i = 0; i < cateNewCategory.length; i++) {
+    switch (cateNewCategory[i]) {
+      case "Phẫu thuật thẩm mỹ":
+        addCateList(cateNewCategory[i], 0);
+        break;
+      case "Điều trị trẻ hóa da":
+        addCateList(cateNewCategory[i], 1);
+        break;
+      case "Tin tức làm đẹp":
+        addCateList(cateNewCategory[i], 2);
+        break;
+    }
+  }
+} else {
+  catNewCate = cateNewCategory;
+}
 
 const sortData = (obj) => {
   let categoriesSort = [];
@@ -180,29 +204,29 @@ const sortData = (obj) => {
   return categorySort;
 };
 
-const renderTabs = (arr) => {
+const renderTabsCateNew = (arr) => {
   let html = "";
   for (item of arr) {
-    html += `<div class="tabNew_da_1_0_0__tablink" data-tab="${item}" onclick="renderData(this)">${item}</div>`;
+    html += `<div class="tabNew_da_1_0_0__tablink" data-tab="${item}" onclick="renderDataCateNew(this)">${item}</div>`;
   }
   return html;
 };
 
-document.getElementById("tab").innerHTML = renderTabs(category);
+document.getElementById("tab").innerHTML = renderTabsCateNew(catNewCate);
 
-const renderData = (ele) => {
+const renderDataCateNew = (ele) => {
   const elements = document.querySelectorAll(".tabNew_da_1_0_0__tablink");
   elements.forEach(function (element) {
     element.classList.remove("current");
   });
   ele.classList.add("current");
   const dataID = ele.getAttribute("data-tab");
-  let lNew = renderList(dataNew, dataID);
+  let lNew = renderListCateNew(dataNew, dataID);
   let lCateGroup = listCateGroup(lNew);
   renderContentTab(lCateGroup);
 };
 
-const renderList = (arr, filter) => {
+const renderListCateNew = (arr, filter) => {
   let dataTab = arr.filter((item) => {
     return item.cateGroup === filter;
   });
@@ -211,7 +235,7 @@ const renderList = (arr, filter) => {
 
 const listCateGroup = (obj) => {
   let listCateG = [];
-  let newsCateG = renderList(obj, obj[0].cateGroup);
+  let newsCateG = renderListCateNew(obj, obj[0].cateGroup);
   let listCateName = sortData(newsCateG);
   listCateName.map((item2) => {
     let itemPush = newsCateG.filter((item) => {
@@ -278,11 +302,11 @@ const renderContentTab = (obj) => {
     html += `${renderListNews(obj[i])}`;
   }
 
-  document.getElementById('data_cate').innerHTML = html;
+  document.getElementById("data_cate").innerHTML = html;
 };
 
-const elements = document.querySelectorAll(".tabNew_da_1_0_0__tablink");
-elements[0].classList.add('current');
-const lNew = renderList(dataNew, dataNew[0].cateGroup);
+const elementsCateNew = document.querySelectorAll(".tabNew_da_1_0_0__tablink");
+elementsCateNew[0].classList.add("current");
+const lNew = renderListCateNew(dataNew, "Phẫu thuật thẩm mỹ");
 const lCateGroup = listCateGroup(lNew);
 renderContentTab(lCateGroup);
