@@ -231,7 +231,7 @@ const dataPhoto = [
   },
 ];
 
-const renderData = (obj) => {
+const renderDataCustomer = (obj) => {
     let html = "";
     const newData = obj.filter(item => {
         return item.showHome === "true";
@@ -253,4 +253,4 @@ const renderData = (obj) => {
 }
 
 
-document.getElementById('box_data_photo').innerHTML = renderData(dataPhoto);
+document.getElementById('box_data_photo').innerHTML = renderDataCustomer(dataPhoto);
