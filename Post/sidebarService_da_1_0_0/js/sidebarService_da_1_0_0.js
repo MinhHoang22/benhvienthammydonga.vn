@@ -1,49 +1,49 @@
 const dataService = [
     {
         name: "Nâng mũi cấu trúc Nano 1",
-        image: "images/cateService_da_1_0_0-2.jpg",
+        image: "https://benhvienthammydonga.vn/wp-content/themes/SCI_Theme/Module/Home/service_da_1_0_0/images/service_da_1_0_0-p1.jpg",
         link: "https://benhvienthammydonga.vn/tham-my-mui/nang-mui-cau-truc/?new",
         show: "true",
     },
     {
         name: "Nâng mũi cấu trúc Nano 2",
-        image: "images/cateService_da_1_0_0-2.jpg",
+        image: "https://benhvienthammydonga.vn/wp-content/themes/SCI_Theme/Module/Home/service_da_1_0_0/images/service_da_1_0_0-p1.jpg",
         link: "https://benhvienthammydonga.vn/tham-my-mui/nang-mui-cau-truc/?new",
         show: "false",
     },
     {
         name: "Nâng mũi cấu trúc Nano 3",
-        image: "images/cateService_da_1_0_0-2.jpg",
+        image: "https://benhvienthammydonga.vn/wp-content/themes/SCI_Theme/Module/Home/service_da_1_0_0/images/service_da_1_0_0-p1.jpg",
         link: "https://benhvienthammydonga.vn/tham-my-mui/nang-mui-cau-truc/?new",
         show: "true",
     },
     {
         name: "Nâng mũi cấu trúc Nano 4",
-        image: "images/cateService_da_1_0_0-2.jpg",
+        image: "https://benhvienthammydonga.vn/wp-content/themes/SCI_Theme/Module/Home/service_da_1_0_0/images/service_da_1_0_0-p1.jpg",
         link: "https://benhvienthammydonga.vn/tham-my-mui/nang-mui-cau-truc/?new",
         show: "true",
     },
     {
         name: "Nâng mũi cấu trúc Nano 5",
-        image: "images/cateService_da_1_0_0-2.jpg",
+        image: "https://benhvienthammydonga.vn/wp-content/themes/SCI_Theme/Module/Home/service_da_1_0_0/images/service_da_1_0_0-p1.jpg",
         link: "https://benhvienthammydonga.vn/tham-my-mui/nang-mui-cau-truc/?new",
         show: "true",
     },
     {
         name: "Nâng mũi cấu trúc Nano 6",
-        image: "images/cateService_da_1_0_0-2.jpg",
+        image: "https://benhvienthammydonga.vn/wp-content/themes/SCI_Theme/Module/Home/service_da_1_0_0/images/service_da_1_0_0-p1.jpg",
         link: "https://benhvienthammydonga.vn/tham-my-mui/nang-mui-cau-truc/?new",
         show: "true",
     },
     {
         name: "Nâng mũi cấu trúc Nano 7",
-        image: "images/cateService_da_1_0_0-2.jpg",
+        image: "https://benhvienthammydonga.vn/wp-content/themes/SCI_Theme/Module/Home/service_da_1_0_0/images/service_da_1_0_0-p1.jpg",
         link: "https://benhvienthammydonga.vn/tham-my-mui/nang-mui-cau-truc/?new",
         show: "true",
     },
     {
         name: "Nâng mũi cấu trúc Nano 8",
-        image: "images/cateService_da_1_0_0-2.jpg",
+        image: "https://benhvienthammydonga.vn/wp-content/themes/SCI_Theme/Module/Home/service_da_1_0_0/images/service_da_1_0_0-p1.jpg",
         link: "https://benhvienthammydonga.vn/tham-my-mui/nang-mui-cau-truc/?new",
         show: "true",
     },
@@ -62,7 +62,7 @@ const renderData = (obj) => {
                 <div class="sidebarService_da_1_0_0__pic">
                     <img width="576" height="408" src="${item.image}" alt="">
                 </div>
-                <div class="sidebarService_da_1_0_0__des">${item.name}</div>
+                <h3 class="sidebarService_da_1_0_0__des">${item.name}</h3>
             </a>
         `;
     });
