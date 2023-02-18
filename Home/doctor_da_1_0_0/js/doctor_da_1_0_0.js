@@ -147,43 +147,6 @@ const showModal = (id, arr) => {
   document.getElementsByClassName("doctor_da_1_0_0")[0].insertAdjacentHTML("beforeend", html);
 };
 
-const showModalRegister = () => {
-  let html = `
-    <div class="modal doctor_da_1_0_0__register" id="modal-register" style="display: flex">
-      <div class="modal-bg modal-bg--1"></div>
-      <div class="modal-box animate-pop doctor_da_1_0_0__boxModal">
-          <div class="doctor_da_1_0_0__form">
-              <span>ĐẶT LỊCH TƯ VẤN CÙNG BÁC SĨ</span>
-              <article>
-                  <div class="doctor_da_1_0_0__formRegist ">
-                      <div class="input"><i class="icon-user"></i><input id="iname" name="iname" required=""
-                              placeholder="(*) Họ và tên" type="text"></div>
-                      <input type="hidden" id="gclid_field" name="gclid_field" value="">
-                      <input type="hidden" id="code_campaign" name="code_campaign" value="530039326">
-                      <input type="hidden" id="name_campaign" name="name_campaign"
-                          value="[Đông Á] SALE ĐẸP KỊP TẾT">
-                      <div class="input"><i class="icon-phone"></i><input id="imob" name="imob" required=""
-                              placeholder="(*) Số điện thoại" type="text"></div>
-                      <div class="input" style="display: none;"><i class="icon-mail-alt"></i><input id="iemail"
-                              style="display: none;" name="iemail" type="email" placeholder="Email:"></div>
-                      <input placeholder="Dịch vụ bạn muốn tư vấn *:" id="itext" name="itext"></input>
-                  </div>
-                  <div class="doctor_da_1_0_0__registModal" onclick="ants_send_contact(this)">
-                          <div class="doctor_da_1_0_0__coatingModal">
-                              <p>Gửi thông tin</p>
-                          </div>
-                          <div class="doctor_da_1_0_0__iconRegModal">
-                              <img width="15" height="12" src="https://benhvienthammydonga.vn/wp-content/themes/SCI_Theme/Module/Home/form_da_1_0_0/images/icon.png" alt="">
-                          </div>
-                  </div>
-              </article>
-          </div>
-      </div>
-    </div>
-     `;
-  document.getElementsByTagName("body")[0].insertAdjacentHTML("beforeend", html);
-};
-
 const renderData = (arr) => {
   let html = "";
   for (itemData of arr) {
@@ -224,16 +187,7 @@ for (let i = 0; i < popBtn.length; i++) {
     });
   }
   window.addEventListener("click", (e) => {
-    console.log()
     if (e.target == document.getElementsByClassName("modal-bg--1")[0]) {
-      if(document.getElementById("modal-doctor")){
-        document.getElementById("modal-doctor").remove();
-      }
-      if(document.getElementById("modal-register")){
-        document.getElementById("modal-register").remove();
-      }
-    }
-    else if (e.target == document.getElementsByClassName("modal-bg--1")[1]) {
-        document.getElementById("modal-register").remove();
+      document.getElementById("modal-doctor").remove();
     }
   })
