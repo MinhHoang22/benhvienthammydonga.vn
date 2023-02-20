@@ -158,7 +158,7 @@
     }
 
     @media (max-width: 767px) {
-        padding: 20px 0;
+        padding: 20px 0 0;
 
         .col-md-4 {
             margin-bottom: 15px;
@@ -196,6 +196,10 @@
             img {
                 width: 45px;
             }
+        }
+
+        &__scr{
+            margin-top: 20px;
         }
 
         &__dl {

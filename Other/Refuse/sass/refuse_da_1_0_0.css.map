@@ -1,9 +1,1 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,gBAAgB,AAAA,CACZ,UAAU,CAAE,OAAO,CACnB,KAAK,CAAE,IAAI,CACX,OAAO,CAAE,KAAK,CACd,UAAU,CAAE,MAAM,CAClB,QAAQ,CAAE,KAAK,CACf,MAAM,CAAE,CAAC,CACT,KAAK,CAAE,IAAI,CAId,AAHG,MAAM,EAAE,SAAS,EAAE,KAAK,EAR5B,AAAA,gBAAgB,AAAA,CASR,OAAO,CAAE,IAAI,CAEpB",
-    "sources": [
-        "refuse_da_1_0_0.scss"
-    ],
-    "names": [],
-    "file": "refuse_da_1_0_0.css"
-}
+{"version":3,"sources":["refuse_da_1_0_0.scss"],"names":[],"mappings":"AAAA,iBACI,kBAAA,CACA,UAAA,CACA,aAAA,CACA,iBAAA,CACA,cAAA,CACA,QAAA,CACA,UAAA,CACA,yBARJ,iBASQ,eAAA,CAAA","file":"refuse_da_1_0_0.css"}
