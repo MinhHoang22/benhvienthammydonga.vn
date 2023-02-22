@@ -24,6 +24,12 @@
         border-radius: 5px;
         margin: 15px 0;
         cursor: pointer;
+        &:nth-child(1){order: 1;}
+        &:nth-child(2){order: 5;}
+        &:nth-child(3){order: 3;}
+        &:nth-child(4){order: 2;}
+        &:nth-child(5){order: 4;}
+        &:nth-child(6){order: 6;}
     }
 
     &__content {
@@ -133,6 +139,7 @@
     @media(max-width: 767px){
         &__item {
             width: 100%;
+            order: unset !important;
         }
 
         &__regist {
