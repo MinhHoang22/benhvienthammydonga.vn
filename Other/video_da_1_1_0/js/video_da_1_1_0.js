@@ -85,7 +85,7 @@ const video_da_1_1_0_handleCloseModal = () => {
 
 // component MenuItem
 const video_da_1_1_0_MenuItem = (item, active) => {
-    return `<li onclick="video_da_1_1_0_handleChangeTab('${item.name}','${item.link}')" class="${active?'active':''}"><h2 class="sidebar_da_1_0_0__titleTab"><a href="${item.link}" >${item.name}</a></h2></li>`
+    return `<li onclick="video_da_1_1_0_handleChangeTab('${item.name}','${item.link}')" class="${active ? 'active' : ''}"><h2 class="sidebar_da_1_0_0__titleTab"><a href="${item.link}" >${item.name}</a></h2></li>`
 }
 
 // component PicItem
@@ -117,25 +117,25 @@ const video_da_1_1_0_PicModal = (src) => {
 
 // giao diện chính
 const video_da_1_1_0_main = (data) => {
-        let tab = ''
-        let picItem = ''
-        let length = 0
-        data.forEach(item => {
+    let tab = ''
+    let picItem = ''
+    let length = 0
+    data.forEach(item => {
+        if (window.location.hash === item.link) {
+            length = item.img.length
+        }
+        tab += video_da_1_1_0_MenuItem(item, window.location.hash === item.link ? true : false, length)
+        for (let i = 0; i < video_da_1_1_0_indexViewMore; i++) {
             if (window.location.hash === item.link) {
-                length = item.img.length
+                picItem += video_da_1_1_0_PicItem({
+                    smallImg: item.img[i].small,
+                    desc: item.img[i].desc,
+                    idx: i
+                })
             }
-            tab += video_da_1_1_0_MenuItem(item, window.location.hash === item.link ? true : false, length)
-            for (let i = 0; i < video_da_1_1_0_indexViewMore; i++) {
-                if (window.location.hash === item.link) {
-                    picItem += video_da_1_1_0_PicItem({
-                        smallImg: item.img[i].small,
-                        desc: item.img[i].desc,
-                        idx: i
-                    })
-                }
-            }
-        })
-        return `<div class="container">
+        }
+    })
+    return `<div class="container">
             <div class="video_1_0_0">
                 <div class="video_1_0_0__sidebar">
                     <div class="sidebar_da_1_0_0">
@@ -143,7 +143,7 @@ const video_da_1_1_0_main = (data) => {
                             <h2 class="sidebar_da_1_0_0__titleHead">${video_da_1_1_0_title}</h2>
                             <button onclick="video_da_1_1_0_handleOpenMenu()">Chọn dịch vụ khác</button>
                         </div>
-                        ${video_da_1_1_0_isOpenMenu ?`<ul class="slideIn">${tab}</ul>`:``}
+                        ${video_da_1_1_0_isOpenMenu ? `<ul class="slideIn">${tab}</ul>` : ``}
                        
                     </div>
                 </div>
@@ -153,26 +153,26 @@ const video_da_1_1_0_main = (data) => {
                         <div class="video_da_1_1_0__box">
                             ${picItem}
                         </div>
-                           ${length ===video_da_1_1_0_indexViewMore  ?'':`<div class="video_da_1_1_0__btn"><button onClick="video_da_1_1_0_handleViewMore(${length})">Xem thêm</button></div>`} 
+                           ${length === video_da_1_1_0_indexViewMore ? '' : `<div class="video_da_1_1_0__btn"><button onClick="video_da_1_1_0_handleViewMore(${length})">Xem thêm</button></div>`} 
                     </div>
                 </div>
-               ${video_da_1_1_0_isOpenMenu?`<div class="video_1_0_0__bg" onclick="video_da_1_1_0_handleOpenMenu()"></div>`:''}
+               ${video_da_1_1_0_isOpenMenu ? `<div class="video_1_0_0__bg" onclick="video_da_1_1_0_handleOpenMenu()"></div>` : ''}
             </div>
         </div>`
-    }
+}
 
 
-    if(window.location.hash === '')window.location.hash=video_da_1_1_0_menu[0].link
-    video_da_1_1_0_menu.forEach(item=>{
-        if( window.location.hash===item.link) video_da_1_1_0_handleChangeTab(item.name,item.link)
-    })
+if (window.location.hash === '') window.location.hash = video_da_1_1_0_menu[0].link
+video_da_1_1_0_menu.forEach(item => {
+    if (window.location.hash === item.link) video_da_1_1_0_handleChangeTab(item.name, item.link)
+})
 
-    // click outSide
-    window.onclick=(e)=>{
-       if(window.innerWidth < 767 && e.target === document.querySelector('.sidebar_da_1_0_0')){
+// click outSide
+window.onclick = (e) => {
+    if (window.innerWidth < 767 && e.target === document.querySelector('.sidebar_da_1_0_0')) {
         video_da_1_1_0_handleOpenMenu()
-       }
-       if( e.target === document.querySelector('.modalVideo_da_1_0_0')){
-        video_da_1_1_0_handleCloseModal()
-       }
     }
+    if (e.target === document.querySelector('.modalVideo_da_1_0_0')) {
+        video_da_1_1_0_handleCloseModal()
+    }
+}

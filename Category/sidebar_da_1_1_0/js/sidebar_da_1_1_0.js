@@ -1,49 +1,6 @@
-const dataService = [
-    {
-        name: "Nâng mũi cấu trúc Nano 1",
-        image: "images/cateService_da_1_0_0-2.jpg",
-        link: "https://benhvienthammydonga.vn/tham-my-mui/nang-mui-cau-truc/?new"
-    },
-    {
-        name: "Nâng mũi cấu trúc Nano 2",
-        image: "images/cateService_da_1_0_0-2.jpg",
-        link: "https://benhvienthammydonga.vn/tham-my-mui/nang-mui-cau-truc/?new"
-    },
-    {
-        name: "Nâng mũi cấu trúc Nano 3",
-        image: "images/cateService_da_1_0_0-2.jpg",
-        link: "https://benhvienthammydonga.vn/tham-my-mui/nang-mui-cau-truc/?new"
-    },
-    {
-        name: "Nâng mũi cấu trúc Nano 4",
-        image: "images/cateService_da_1_0_0-2.jpg",
-        link: "https://benhvienthammydonga.vn/tham-my-mui/nang-mui-cau-truc/?new"
-    },
-    {
-        name: "Nâng mũi cấu trúc Nano 5",
-        image: "images/cateService_da_1_0_0-2.jpg",
-        link: "https://benhvienthammydonga.vn/tham-my-mui/nang-mui-cau-truc/?new"
-    },
-    {
-        name: "Nâng mũi cấu trúc Nano 6",
-        image: "images/cateService_da_1_0_0-2.jpg",
-        link: "https://benhvienthammydonga.vn/tham-my-mui/nang-mui-cau-truc/?new"
-    },
-    {
-        name: "Nâng mũi cấu trúc Nano 7",
-        image: "images/cateService_da_1_0_0-2.jpg",
-        link: "https://benhvienthammydonga.vn/tham-my-mui/nang-mui-cau-truc/?new"
-    },
-    {
-        name: "Nâng mũi cấu trúc Nano 8",
-        image: "images/cateService_da_1_0_0-2.jpg",
-        link: "https://benhvienthammydonga.vn/tham-my-mui/nang-mui-cau-truc/?new"
-    },
-];
+const dataLimit = dataService.slice(0, 6);
 
-const dataLimit = dataService.slice(0,6);
-
-const renderData = (obj) => {
+const renderDataSidebar = (obj) => {
     let html = "";
     obj.map(item => {
         html += `
@@ -58,4 +15,4 @@ const renderData = (obj) => {
     return html;
 }
 
-document.getElementById('data_service_sidebar').innerHTML = renderData(dataLimit);
+document.getElementById('data_service_sidebar').innerHTML = renderDataSidebar(dataLimit);

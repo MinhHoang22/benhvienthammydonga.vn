@@ -16,13 +16,13 @@ const slideBuild = (data) => {
 const slideNext = (data) => {
     let count = 1
     setInterval(() => {
-        if(count < data.length){
+        if (count < data.length) {
             slideBuild(data[count])
-            count++; 
+            count++;
         } else {
             count = 0;
         }
-        
+
     }, 9000);
 }
 
@@ -36,5 +36,5 @@ const scrollTo = (activeEl) => {
     e.style.height = `${height}px`;
 };
 setTimeout(() => {
-    scrollTo('.slider_da_1_0_0');        
+    scrollTo('.slider_da_1_0_0');
 }, 1000);
